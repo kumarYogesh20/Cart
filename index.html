@@ -1,0 +1,75 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e000ca3428.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-11 mg-auto">
+                <div class="left-container">
+                    <div class="product-title">
+                        <h4>Shopping Cart</h4>
+                        <p><span class="ItemNo"></span> Item</p>
+                    </div>
+                    <div id="myTable" class="table">
+                        <table id="dataTable">
+                            <thead class="thead">
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div id="cartMessage">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-11 mg-auto">
+                <div class="right-container">
+                    <div class="product-title">
+                        <h4>Order Summary</h4>
+                    </div>
+                    <div class="item-total">
+                        <p class="order-title">Item <span class="ItemNo"></span></p>
+                        <p class="order-title">&#8377;<span id="total" class="total"></span></p>
+                    </div>
+                    <div class="shipping">
+                        <p class="order-title">Shipping</p>
+                        <select name="shipping" id="shipping">
+                            <option value="50" selected>Standard Delivery - &#8377;<span id="sd">50</span></option>
+                            <option value="150">One-Day Delivery - &#8377;<span id="odd">150</span></option>
+                        </select>
+                    </div>
+                    <div class="promocode">
+                        <p class="order-title">Promo Code</p>
+                        <div class="promo-block">
+                            <input type="text" value="" name="" id="promoCode" placeholder="Enter a code">
+                            <span class="fa-solid fa-circle-xmark" id="del-promo" style="display: none;"> <i class=""></i></span>
+                            <span id="promoMessage"> </span>
+                            <button type="submit" id="ApplyCode" disabled="disabled">Apply</button>
+                        </div>
+                    </div>
+                    <div class="total-cost">
+                        <p>Total Cost</p>
+                        <p> &#8377;<span id="total-cost" class="total-cost-bill">0</span></p>
+                    </div>
+                    <div class="proceedBtn">
+                        <!-- <button  role="button">Button 55</button> -->
+                        <a href="javascript:void(0);" class="pbtn">Proceed to Pay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow-left"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
